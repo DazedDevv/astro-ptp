@@ -1,0 +1,117 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ArrowIcon from '../components/ArrowIcon.astro';
+---
+
+<Layout title="DazedDev - Desarrollador Web FullStack con +2 años de experiencia en el sector">
+	<header class="flex flex-row items-center justify-between items-center p-4">
+		<nav class="text-xl font-bold flex items-center">
+			<h1>DazedDev <strong class="text-blue-400">.</strong></h1>
+		</nav>
+		<nav>
+			<ul class="flex flex-row gap-5 font-bold text-white">
+				<li><a class="hover:text-blue-400 ease-in duration-300" href="#">Inicio</a></li>
+				<li><a class="hover:text-blue-400 ease-in duration-300" href="#">About me</a></li>
+				<li><a class="hover:text-blue-400 ease-in duration-300" href="#">Skills</a></li>
+				<li><a class="hover:text-blue-400 ease-in duration-300" href="#">Projects</a></li>
+				<li><a class="hover:text-blue-400 ease-in duration-300" href="#">Contact me</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="Inicio" class="mt-10 flex flex-row justify-between items-center">
+			<div>
+				<h1 class="text-4xl font-bold">Luis Fabiano La Chira</h1>
+				<span class="text-xl font-bold text-blue-400">Desarrollador Web FullStack</span>
+			</div>
+			<picture>
+				<img class="w-64 h-64 rounded-sm" src="https://i.pinimg.com/736x/3b/fc/6c/3bfc6c112f9050cce545582402acdc31.jpg" alt="Mi usuario de GitHub">
+			</picture>
+		</section>
+
+		<section id="About me">
+			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">About me<ArrowIcon /></h2>
+			<p><strong class="font-bold text-green-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore <strong class="font-bold text-violet-400">et dolore magna aliqua</strong>. Ut enim ad minim veniam, quis nostrud exercitation <strong class="font-bold text-rose-400">ullamco laboris nisi ut aliquip</strong> ex ea commodo consequat. <strong class="font-bold text-cyan-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit</strong>, sed do eiusmod tempor incididunt ut labore ex ea commodo consequat.</p>
+		</section>
+
+		<section id="Skills">
+			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">Skills<ArrowIcon /></h2>
+			<div class="grid grid-cols-2 flex-wrap gap-2">
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-blue-500 hover:-translate-y-1 ease-in duration-300">
+					CSS
+				</div>
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-orange-400 hover:-translate-y-1 ease-in duration-300">
+					HTML
+				</div>
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-yellow-500 hover:-translate-y-1 ease-in duration-300">
+					JS
+				</div>
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-green-500 hover:-translate-y-1 ease-in duration-300">
+					NodeJS
+				</div>
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-sky-500 hover:-translate-y-1 ease-in duration-300">
+					Tailwind
+				</div>
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-purple-500 hover:-translate-y-1 ease-in duration-300">
+					Python
+				</div>
+				<div class="w-full flex flex-col gap-2 items-center justify-center bg-zinc-800 font-bold rounded-lg text-center p-3 hover:text-red-500 hover:-translate-y-1 ease-in duration-300">
+					Java
+				</div>
+			</div>
+		</section>
+		
+		<section id="Projects">
+			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">Projects<ArrowIcon /></h2>
+			<div class="flex flex-col gap-2">
+				<div class="bg-zinc-800 rounded-lg p-5 flex flex-col gap-2">
+					<h1 class="text-2xl font-bold text-blue-400">Proyecto 1</h1>
+					<p class="text-sm text-white font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+				</div>
+				<div class="bg-zinc-800 rounded-lg p-5 flex flex-col gap-2">
+					<h1 class="text-2xl font-bold text-blue-400">Proyecto 1</h1>
+					<p class="text-sm text-white font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="Contact me">
+			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">Contact me<ArrowIcon /></h2>
+			<div class="flex flex-col gap-2 items-center justify-center">
+				<a class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-blue-400 flex flex-col items-center justify-center">
+					Discord <p class="text-sm text-white font-bold">¡Copia mi usuario!</p>
+				</a>
+				<a class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-red-400 flex flex-col items-center justify-center">
+					Youtube <p class="text-sm text-white font-bold">!Link Directo!</p>
+				</a>
+				<a class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-purple-400 flex flex-col items-center justify-center">
+					Linkedin <p class="text-sm text-white font-bold">¡Link Directo!</p>
+				</a>
+			</div>
+		</section>
+
+		<footer class="text-center mt-10">
+			<p class="font-semibold text-sm">© 2024 DazedDev - Todos los derechos reservados</p>
+		</footer>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	header {
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		margin: auto;
+		padding: 1rem;
+	}
+
+</style>
