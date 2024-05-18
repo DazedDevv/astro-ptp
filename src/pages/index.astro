@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import ArrowIcon from '../components/ArrowIcon.astro';
+
+import { PROJECTS } from '../API/API_Projects';
 ---
 
 <Layout title="DazedDev - Desarrollador Web FullStack con +2 años de experiencia en el sector">
@@ -64,29 +66,27 @@ import ArrowIcon from '../components/ArrowIcon.astro';
 		<section id="Projects">
 			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">Projects<ArrowIcon /></h2>
 			<div class="flex flex-col gap-2">
-				<div class="bg-zinc-800 rounded-lg p-5 flex flex-col gap-2">
-					<h1 class="text-2xl font-bold text-blue-400">Proyecto 1</h1>
-					<p class="text-sm text-white font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-				</div>
-				<div class="bg-zinc-800 rounded-lg p-5 flex flex-col gap-2">
-					<h1 class="text-2xl font-bold text-blue-400">Proyecto 1</h1>
-					<p class="text-sm text-white font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
-				</div>
+				{PROJECTS.map((project) => (
+					<div class="bg-zinc-800 rounded-lg p-5 flex flex-col gap-2">
+					<h1 class="text-2xl font-bold text-blue-400">{project.name}</h1>
+					<p class="text-sm text-white font-semibold">{project.description}</p>
+					</div>
+				))}
 			</div>
 		</section>
 
 		<section id="Contact me">
 			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">Contact me<ArrowIcon /></h2>
 			<div class="flex flex-col gap-2 items-center justify-center">
-				<a class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-blue-400 flex flex-col items-center justify-center">
+				<a id="DiscordClip" class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-blue-400 flex flex-col items-center justify-center">
 					Discord <p class="text-sm text-white font-bold">¡Copia mi usuario!</p>
 				</a>
-				<a class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-red-400 flex flex-col items-center justify-center">
+				<button id="YoutubeClip" class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-red-400 flex flex-col items-center justify-center">
 					Youtube <p class="text-sm text-white font-bold">!Link Directo!</p>
-				</a>
-				<a class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-purple-400 flex flex-col items-center justify-center">
+				</button>
+				<button id="linkInClip" class="w-full bg-zinc-800 rounded-lg p-5 text-2xl font-bold text-purple-400 flex flex-col items-center justify-center">
 					Linkedin <p class="text-sm text-white font-bold">¡Link Directo!</p>
-				</a>
+				</button>
 			</div>
 		</section>
 
