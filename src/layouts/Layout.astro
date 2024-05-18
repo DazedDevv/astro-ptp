@@ -21,10 +21,68 @@ const { title } = Astro.props;
 	</body>
 </html>
 <style is:global>
-	html {
+	html.dark {
 		font-family: system-ui, sans-serif;
-		background: #13151a;
+		background-color: #13151a;
 		background-size: 300px;
 		color: #fff;
+	}
+
+	html {
+		background-color: #ffffffd3;
+	}
+
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	header {
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		margin: auto;
+		padding: 1rem;
+	}
+	.dark #divs {
+		background-color:#27272a;
+
+  	}
+
+	div #divs {
+		background-color: #f5f5f4;
+	}
+
+	.dark #project {
+		background-color:#27272a;
+	}
+
+	div #project {
+		background-color:  #f5f5f4
+	}
+
+	.dark #DiscordClip {
+		background-color:#27272a;
+	}
+
+	div #DiscordClip {
+		background-color:  #f5f5f4
+	}
+	.dark #YoutubeClip {
+		background-color:#27272a;
+	}
+
+	div #YoutubeClip {
+		background-color:  #f5f5f4
+	}
+	.dark #linkInClip {
+		background-color:#27272a;
+	}
+
+	div #linkInClip {
+		background-color:  #f5f5f4
 	}
 </style>
