@@ -44,7 +44,7 @@ import ThemeButtonIcon from '../components/ThemeButtonIcon.astro';
 			<h2 class="text-2xl font-bold mt-10 mb-5 flex flex-row items-center gap-2">Skills<ArrowIcon /></h2>
 			<div class="grid grid-cols-1 sm:grid-cols-2 flex-wrap gap-2">
 				{SKILLS.map((project) => (
-					<div id="divs" class="w-full flex flex-col gap-2 items-center justify-center font-bold rounded-lg text-center p-3 hover:-translate-y-1 ease-in duration-300">
+					<div id="divs" class:list={{[`hover:text-${project.color}-500`]: true}} class="flex flex-col gap-2 items-center justify-center font-bold rounded-lg text-center p-3 hover:-translate-y-1 ease-in duration-300">
 						{project.lenguage}
 					</div>
 				))}
